@@ -1,0 +1,50 @@
+GameName = "Obby But You're an Otter" 
+
+tab1name = "Main" 
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))() 
+
+local GameName = Library:NewWindow(GameName) 
+
+local Tab1 = GameName:NewSection(tab1name) 
+
+Tab1:CreateButton("Anti Afk", function(value)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/KazeOnTop/Rice-Anti-Afk/main/Wind", true))()
+end)
+
+Tab1:CreateButton("Join Our Discord", function()
+    setclipboard("https://discord.gg/sS7B9xrW") -- Copies the Discord link to the clipboard
+    print("Discord link copied to clipboard!")
+end)
+
+local Tab2 = GameName:NewSection("World 1") 
+
+Tab2:CreateButton("1st World", function(value)
+    game.Players.LocalPlayer.Character:PivotTo(CFrame.new(Vector3.new(-2212, 36, 401)))
+end) 
+
+Tab2:CreateButton("Finish Obby", function(value)
+    game.Players.LocalPlayer.Character:PivotTo(CFrame.new(Vector3.new(-10776, 1127, 254)))
+end)
+
+local Tab3 = GameName:NewSection("World 2") 
+
+Tab3:CreateButton("2nd World", function(value)
+    game.Players.LocalPlayer.Character:PivotTo(CFrame.new(Vector3.new(-2253, 36, 327)))
+end) 
+
+Tab3:CreateButton("Finish Obby", function(value)
+    game.Players.LocalPlayer.Character:PivotTo(CFrame.new(Vector3.new(-10008, 216, -349)))
+end)
+
+local Tab4 = GameName:NewSection("World 3") 
+
+Tab4:CreateButton("3rd World", function(value)
+    game.Players.LocalPlayer.Character:PivotTo(CFrame.new(Vector3.new(-2213, 36, 262)))
+end) 
+
+Tab4:CreateButton("Finish Obby", function(value)
+    game.Players.LocalPlayer.Character:PivotTo(CFrame.new(Vector3.new(-10021, -162, -2379)))
+end)
+
+local Tab5 = GameName:NewSection("Raizen")
